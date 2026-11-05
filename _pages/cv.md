@@ -75,18 +75,40 @@ bajada: "Licenciado en Economía por la PUCP, con experiencia en monitoreo y eva
 ## Certificaciones
 
 <ul class="certs">
-  <li><span class="chip">2026</span><h3>Econometría Aplicada Avanzada</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p><p class="certs__codigo">Registro N.° 2026-414-B-0000288-01</p></li>
-  <li><span class="chip">2026</span><h3>Introducción a Machine Learning para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p><p class="certs__codigo">Registro N.° 2026-414-B-0000261-01</p></li>
-  <li><span class="chip">2026</span><h3>Prompt Engineering usando GPT-4</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h</p><p class="certs__codigo">Registro N.° 2026-414-B-0000594-01</p></li>
-  <li><span class="chip">2026</span><h3>Fundamentos de Programación en Python para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h · 1 crédito</p><p class="certs__codigo">Registro N.° 2026-414-B-0000051-01</p></li>
-  <li><span class="chip">2025</span><h3>Inglés avanzado (nivel C1 del MCER)</h3><p>Idiomas PUCP</p><p class="certs__det">Programa culminado</p></li>
-  <li><span class="chip">2025</span><h3>Big Data y Data Analytics para Aplicaciones Financieras</h3><p>Facultad de Ciencias Contables PUCP</p><p class="certs__det">48 h</p><p class="certs__codigo">Registro N.° 2025-413-B-0000721-01</p></li>
-  <li><span class="chip">2025</span><h3>Monitoreo y Evaluación de Programas y Proyectos Sociales</h3><p>REDINFOR Perú</p><p class="certs__det">120 h pedagógicas</p><p class="certs__codigo">Código de registro MEPPS-20253007</p></li>
-  <li><span class="chip">2024</span><h3>Laboratorio de Programación: R y Python</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p><p class="certs__codigo">Constancia FCCSS 2024 N.° 205</p></li>
-  <li><span class="chip">2023</span><h3>Laboratorio de Econometría: Stata</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p><p class="certs__codigo">Constancia FCCSS 2023 N.° 017</p></li>
-  <li><span class="chip">2023</span><h3>Especialización en SQL</h3><p>Netzun</p><p class="certs__det">10 h</p><p class="certs__codigo">Código D5222B86</p></li>
-  <li><span class="chip">2022</span><h3>Análisis de Indicadores Sociodemográficos con la ENAHO</h3><p>Facultad de Ciencias Sociales PUCP e INEI</p><p class="certs__det">24 h</p><p class="certs__codigo">Registro N.° 2022-414-B-0001060-01</p></li>
+  <li><span class="chip">2026</span><h3>Econometría Aplicada Avanzada</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p><p class="certs__codigo">Registro N.° 2026-414-B-0000288-01</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/econometria-avanzada.jpg" target="_blank" rel="noopener" data-titulo="Econometría Aplicada Avanzada"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2026</span><h3>Introducción a Machine Learning para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p><p class="certs__codigo">Registro N.° 2026-414-B-0000261-01</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/machine-learning.jpg" target="_blank" rel="noopener" data-titulo="Introducción a Machine Learning para Economía"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2026</span><h3>Prompt Engineering usando GPT-4</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h</p><p class="certs__codigo">Registro N.° 2026-414-B-0000594-01</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/prompt-engineering.jpg" target="_blank" rel="noopener" data-titulo="Prompt Engineering usando GPT-4"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2026</span><h3>Fundamentos de Programación en Python para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h · 1 crédito</p><p class="certs__codigo">Registro N.° 2026-414-B-0000051-01</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/python-economia.jpg" target="_blank" rel="noopener" data-titulo="Fundamentos de Programación en Python para Economía"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2025</span><h3>Inglés avanzado (nivel C1 del MCER)</h3><p>Idiomas PUCP</p><p class="certs__det">Programa culminado</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/ingles-avanzado.jpg" target="_blank" rel="noopener" data-titulo="Inglés avanzado (nivel C1 del MCER)"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2025</span><h3>Big Data y Data Analytics para Aplicaciones Financieras</h3><p>Facultad de Ciencias Contables PUCP</p><p class="certs__det">48 h</p><p class="certs__codigo">Registro N.° 2025-413-B-0000721-01</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/big-data-pucp.jpg" target="_blank" rel="noopener" data-titulo="Big Data y Data Analytics para Aplicaciones Financieras"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2025</span><h3>Monitoreo y Evaluación de Programas y Proyectos Sociales</h3><p>REDINFOR Perú</p><p class="certs__det">120 h pedagógicas</p><p class="certs__codigo">Código de registro MEPPS-20253007</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/monitoreo-evaluacion-redinfor.jpg" target="_blank" rel="noopener" data-titulo="Monitoreo y Evaluación de Programas y Proyectos Sociales"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2024</span><h3>Laboratorio de Programación: R y Python</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p><p class="certs__codigo">Constancia FCCSS 2024 N.° 205</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/laboratorio-r-python.jpg" target="_blank" rel="noopener" data-titulo="Laboratorio de Programación: R y Python"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2023</span><h3>Laboratorio de Econometría: Stata</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p><p class="certs__codigo">Constancia FCCSS 2023 N.° 017</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/laboratorio-stata.jpg" target="_blank" rel="noopener" data-titulo="Laboratorio de Econometría: Stata"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2023</span><h3>Especialización en SQL</h3><p>Netzun</p><p class="certs__det">10 h</p><p class="certs__codigo">Código D5222B86</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/sql-netzun.jpg" target="_blank" rel="noopener" data-titulo="Especialización en SQL"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
+  <li><span class="chip">2022</span><h3>Análisis de Indicadores Sociodemográficos con la ENAHO</h3><p>Facultad de Ciencias Sociales PUCP e INEI</p><p class="certs__det">24 h</p><p class="certs__codigo">Registro N.° 2022-414-B-0001060-01</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/enaho-inei-pucp.jpg" target="_blank" rel="noopener" data-titulo="Análisis de Indicadores Sociodemográficos con la ENAHO"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
 </ul>
+
+
+<dialog id="visor-certificado" class="visor" aria-label="Certificado">
+  <div class="visor__barra"><span class="visor__titulo"></span><button type="button" class="visor__cerrar" aria-label="Cerrar">✕</button></div>
+  <div class="visor__cuerpo"><img alt=""></div>
+</dialog>
+<script>
+(function () {
+  var d = document.getElementById("visor-certificado");
+  if (!d || typeof d.showModal !== "function") return;
+  var img = d.querySelector("img"), tit = d.querySelector(".visor__titulo");
+  document.querySelectorAll(".certs__ver").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      img.src = a.href; img.alt = "Certificado: " + a.dataset.titulo; tit.textContent = a.dataset.titulo;
+      d.showModal();
+    });
+  });
+  d.querySelector(".visor__cerrar").addEventListener("click", function () { d.close(); });
+  d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+})();
+</script>
 
 ## Herramientas
 

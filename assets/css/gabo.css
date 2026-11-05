@@ -636,3 +636,38 @@ html[data-theme="dark"] .cinta { background: #0b0a07; border-color: #3a362b; }
 .greedy-nav .visible-links li:first-child a::before {
   position: static; transform: none !important; height: 1.5em; width: 1.5em; background: var(--rojo);
 }
+
+/* ---------- Ver certificado ---------- */
+.certs li { display: flex; flex-direction: column; }
+.certs__ver {
+  align-self: flex-start;
+  margin-top: auto;
+  display: inline-flex; align-items: center; gap: 0.4em;
+  margin-block-start: 0.7rem;
+  padding: 0.3em 0.8em;
+  border: 1.5px solid var(--linea);
+  border-radius: 999px;
+  background: var(--papel);
+  color: var(--tinta) !important;
+  font-size: 0.82rem; font-weight: 700; text-decoration: none;
+}
+.certs__ver:hover { background: var(--resaltador); color: #1c1a15 !important; }
+.visor {
+  width: min(920px, 94vw); max-height: 92vh; padding: 0;
+  border: 2px solid var(--linea); border-radius: 14px;
+  background: var(--tarjeta); color: var(--tinta);
+  box-shadow: 8px 8px 0 var(--sombra);
+}
+.visor::backdrop { background: rgba(20, 18, 12, 0.72); }
+.visor__barra {
+  position: sticky; top: 0; z-index: 1;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 0.6rem 0.9rem; background: var(--tarjeta); border-bottom: 2px solid var(--linea);
+}
+.visor__titulo { font-family: var(--f-titulo); font-weight: 700; font-size: 1rem; }
+.visor__cerrar {
+  width: 2.2rem; height: 2.2rem; border: 2px solid var(--linea); border-radius: 50%;
+  background: var(--resaltador); color: #1c1a15; font-weight: 700; cursor: pointer;
+}
+.visor__cuerpo { padding: 0.8rem; }
+.visor__cuerpo img { display: block; width: 100%; height: auto; border-radius: 6px; }
