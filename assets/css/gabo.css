@@ -845,3 +845,13 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
   #site-nav .visible-links li:first-child a::before { margin-right: 0.4em; }
   #site-nav .visible-links #lang-toggle a, #site-nav .visible-links #theme-toggle a { margin: 0 0.2rem !important; }
 }
+
+/* ---------- Video de Facebook en la tesis ---------- */
+.video-fb { max-width: 720px; margin: 0 0 2rem; }
+.video-fb__marco {
+  aspect-ratio: 16 / 9; overflow: hidden; background: #000;
+  border: 2px solid var(--linea); border-radius: 12px;
+  box-shadow: 6px 6px 0 var(--sombra);
+}
+.video-fb__marco iframe { display: block; width: 100%; height: 100%; border: 0; }
+.video-fb figcaption { margin-top: 0.7rem; font-size: 0.9rem; color: var(--tinta-2); }

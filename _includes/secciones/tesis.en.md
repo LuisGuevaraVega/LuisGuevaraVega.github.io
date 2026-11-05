@@ -26,6 +26,13 @@ When Peru's higher-education regulator (SUNEDU) grants or denies a university it
 
 Regulation does affect occupational mismatch, and **denial weighs more than approval**. The license shapes graduates' labor-market entry, but on its own it does not guarantee better perceived quality or productivity.
 
+## The thesis on video
+
+<figure class="video-fb">
+  <div class="video-fb__marco"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2018825885473430%2F&show_text=false" title="Video about the thesis published by the PUCP School of Social Sciences" loading="lazy" scrolling="no" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+  <figcaption>Thesis presentation published by the PUCP School of Social Sciences (3:16, in Spanish). <a href="https://www.facebook.com/reel/2018825885473430/">Watch it on Facebook</a></figcaption>
+</figure>
+
 <ul class="chips">
   <li class="chip">Occupational mismatch</li>
   <li class="chip">Signaling</li>

@@ -26,6 +26,13 @@ Cuando la SUNEDU otorga o deniega la licencia a una universidad, ¿cambia la pro
 
 La regulación sí tiene un efecto sobre la inadecuación profesional, y **la denegación pesa más que el otorgamiento**. La licencia influye en la inserción laboral de los egresados, pero no garantiza por sí sola mejoras en la calidad percibida ni en la productividad.
 
+## La tesis en video
+
+<figure class="video-fb">
+  <div class="video-fb__marco"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2018825885473430%2F&show_text=false" title="Video sobre la tesis publicado por la Facultad de Ciencias Sociales de la PUCP" loading="lazy" scrolling="no" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+  <figcaption>Presentación de la tesis publicada por la Facultad de Ciencias Sociales de la PUCP (3:16). <a href="https://www.facebook.com/reel/2018825885473430/">Verlo en Facebook</a></figcaption>
+</figure>
+
 <ul class="chips">
   <li class="chip">Inadecuación ocupacional</li>
   <li class="chip">Señalización</li>
