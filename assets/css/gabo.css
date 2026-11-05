@@ -883,3 +883,6 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
 @media (prefers-reduced-motion: reduce) {
   .greedy-nav .visible-links li:first-child a:hover::before { transform: none !important; }
 }
+
+/* Volver a la presentación = volver al tope exacto de la página */
+#inicio { scroll-margin-top: 100vh; }
