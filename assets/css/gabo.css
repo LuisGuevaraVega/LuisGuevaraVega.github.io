@@ -561,3 +561,13 @@ img, video, iframe { max-width: 100%; }
     margin-top: calc(57px + 0.684 * clamp(2.2rem, 6vw, 4.1rem));
   }
 }
+
+.certs .certs__codigo {
+  margin-top: 0.45rem;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--global-border-color);
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  color: var(--tinta);
+  overflow-wrap: anywhere;
+}

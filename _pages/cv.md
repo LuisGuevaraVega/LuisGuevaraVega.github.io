@@ -75,17 +75,17 @@ bajada: "Licenciado en Economía por la PUCP, con experiencia en monitoreo y eva
 ## Certificaciones
 
 <ul class="certs">
-  <li><span class="chip">2026</span><h3>Econometría Aplicada Avanzada</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p></li>
-  <li><span class="chip">2026</span><h3>Introducción a Machine Learning para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p></li>
-  <li><span class="chip">2026</span><h3>Prompt Engineering usando GPT-4</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h</p></li>
-  <li><span class="chip">2026</span><h3>Fundamentos de Programación en Python para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h · 1 crédito</p></li>
+  <li><span class="chip">2026</span><h3>Econometría Aplicada Avanzada</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p><p class="certs__codigo">Registro N.° 2026-414-B-0000288-01</p></li>
+  <li><span class="chip">2026</span><h3>Introducción a Machine Learning para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p><p class="certs__codigo">Registro N.° 2026-414-B-0000261-01</p></li>
+  <li><span class="chip">2026</span><h3>Prompt Engineering usando GPT-4</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h</p><p class="certs__codigo">Registro N.° 2026-414-B-0000594-01</p></li>
+  <li><span class="chip">2026</span><h3>Fundamentos de Programación en Python para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h · 1 crédito</p><p class="certs__codigo">Registro N.° 2026-414-B-0000051-01</p></li>
   <li><span class="chip">2025</span><h3>Inglés avanzado (nivel C1 del MCER)</h3><p>Idiomas PUCP</p><p class="certs__det">Programa culminado</p></li>
-  <li><span class="chip">2025</span><h3>Big Data y Data Analytics para Aplicaciones Financieras</h3><p>Facultad de Ciencias Contables PUCP</p><p class="certs__det">48 h</p></li>
-  <li><span class="chip">2025</span><h3>Monitoreo y Evaluación de Programas y Proyectos Sociales</h3><p>REDINFOR Perú</p><p class="certs__det">120 h pedagógicas</p></li>
-  <li><span class="chip">2024</span><h3>Laboratorio de Programación: R y Python</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p></li>
-  <li><span class="chip">2023</span><h3>Laboratorio de Econometría: Stata</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p></li>
-  <li><span class="chip">2023</span><h3>Especialización en SQL</h3><p>Netzun</p><p class="certs__det">10 h</p></li>
-  <li><span class="chip">2022</span><h3>Análisis de Indicadores Sociodemográficos con la ENAHO</h3><p>Facultad de Ciencias Sociales PUCP e INEI</p><p class="certs__det">24 h</p></li>
+  <li><span class="chip">2025</span><h3>Big Data y Data Analytics para Aplicaciones Financieras</h3><p>Facultad de Ciencias Contables PUCP</p><p class="certs__det">48 h</p><p class="certs__codigo">Registro N.° 2025-413-B-0000721-01</p></li>
+  <li><span class="chip">2025</span><h3>Monitoreo y Evaluación de Programas y Proyectos Sociales</h3><p>REDINFOR Perú</p><p class="certs__det">120 h pedagógicas</p><p class="certs__codigo">Código de registro MEPPS-20253007</p></li>
+  <li><span class="chip">2024</span><h3>Laboratorio de Programación: R y Python</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p><p class="certs__codigo">Constancia FCCSS 2024 N.° 205</p></li>
+  <li><span class="chip">2023</span><h3>Laboratorio de Econometría: Stata</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p><p class="certs__codigo">Constancia FCCSS 2023 N.° 017</p></li>
+  <li><span class="chip">2023</span><h3>Especialización en SQL</h3><p>Netzun</p><p class="certs__det">10 h</p><p class="certs__codigo">Código D5222B86</p></li>
+  <li><span class="chip">2022</span><h3>Análisis de Indicadores Sociodemográficos con la ENAHO</h3><p>Facultad de Ciencias Sociales PUCP e INEI</p><p class="certs__det">24 h</p><p class="certs__codigo">Registro N.° 2022-414-B-0001060-01</p></li>
 </ul>
 
 ## Herramientas
