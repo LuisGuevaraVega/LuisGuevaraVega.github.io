@@ -780,3 +780,27 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
 }
 #lang-toggle a::before { display: none; }
 #lang-toggle a:hover { background: var(--resaltador); color: #1c1a15 !important; }
+
+/* ---------- Herramientas: solo logos, en fila, con animación al pasar el cursor ---------- */
+.herramientas {
+  display: flex; flex-wrap: wrap; gap: 0.9rem;
+  grid-template-columns: none; max-width: none;
+}
+.herramientas li {
+  display: grid; place-items: center;
+  width: 58px; height: 58px; padding: 0;
+  background: #fff;                       /* fondo blanco: los logos se ven también en modo oscuro */
+  border: 2px solid var(--linea); border-radius: 14px;
+  box-shadow: 3px 3px 0 var(--sombra);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  cursor: default;
+}
+.herramientas li:hover {
+  transform: translateY(-5px) rotate(-6deg) scale(1.08);
+  box-shadow: 6px 8px 0 var(--sombra);
+}
+.herramientas li:nth-child(even):hover { transform: translateY(-5px) rotate(6deg) scale(1.08); }
+.herramientas img { width: 34px; height: 34px; padding: 0; background: none; border-radius: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .herramientas li, .herramientas li:hover { transition: none; transform: none; }
+}
