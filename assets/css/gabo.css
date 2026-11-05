@@ -521,3 +521,23 @@ img, video, iframe { max-width: 100%; }
 .certs h3 { margin: 0.5rem 0 0.25rem; font-size: 1.05rem; line-height: 1.25; }
 .certs p { margin: 0; font-size: 0.9rem; color: var(--tinta-2); }
 .certs .certs__det { font-family: var(--f-mono); font-size: 0.78rem; margin-top: 0.3rem; }
+
+/* ---------- Pie de página delgado (una sola línea) ---------- */
+.page__footer { margin-top: 0; border-top: 2px solid var(--linea); }
+.page__footer footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem 1.5rem;
+  margin-top: 0;
+  padding: 0.3rem 1rem;
+}
+.page__footer-follow li { padding-top: 0; padding-bottom: 0; font-size: 0.7rem; }
+.page__footer-copyright { font-size: 0.7rem; line-height: 1.4; }
+.page__footer-copyright br { display: none; }
+.page__footer-copyright br + * , .page__footer-copyright { white-space: normal; }
+/* En escritorio el pie queda fijo: deja espacio para que no tape el contenido */
+@media screen and (min-width: 769px) {
+  body { padding-bottom: 3.2rem; }
+}
