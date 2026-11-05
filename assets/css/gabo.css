@@ -909,3 +909,6 @@ html[data-theme="dark"] {
 #site-nav > button { background: transparent !important; }
 html[data-theme="dark"] .masthead { background: var(--papel); border-bottom-color: #3a362b; }
 html[data-theme="dark"] .greedy-nav .visible-links li:first-child { border-right-color: #3a362b; }
+/* Una sola línea bajo el menú y sin subrayado en los botones de idioma y tema */
+.masthead::after { display: none; }
+#theme-toggle a::before, #lang-toggle a::before { display: none !important; }
