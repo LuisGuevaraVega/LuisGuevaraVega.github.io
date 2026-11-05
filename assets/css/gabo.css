@@ -811,17 +811,28 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
   padding: 0.85em 16px !important;      /* mismo ancho y márgenes que .inicio */
   box-sizing: border-box;
 }
-#site-nav .visible-links { padding-right: 104px; }   /* reserva el espacio de los dos botones para el cálculo del menú */
-#site-nav .visible-links li.tail {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+/* Solo en escritorio: EN y tema anclados al borde derecho del contenido */
+@media (min-width: 769px) {
+  #site-nav .visible-links { padding-right: 104px; }   /* reserva el espacio de los dos botones para el cálculo del menú */
+  #site-nav .visible-links li.tail {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #site-nav .visible-links #theme-toggle { right: 0; }
+  #site-nav .visible-links #theme-toggle a { margin: 0 !important; }
+  #site-nav .visible-links #lang-toggle { right: 46px; }
+  #site-nav .visible-links #lang-toggle a { margin: 0 !important; }
+  /* cuando aparece el botón de tres rayas (celular), los dos botones se corren a su izquierda */
+  #site-nav button:not(.hidden) ~ .visible-links #theme-toggle { right: 52px; }
+  #site-nav button:not(.hidden) ~ .visible-links #lang-toggle { right: 98px; }
+  #site-nav button:not(.hidden) ~ .visible-links { padding-right: 150px; }
 }
-#site-nav .visible-links #theme-toggle { right: 0; }
-#site-nav .visible-links #theme-toggle a { margin: 0 !important; }
-#site-nav .visible-links #lang-toggle { right: 46px; }
-#site-nav .visible-links #lang-toggle a { margin: 0 !important; }
-/* cuando aparece el botón de tres rayas (celular), los dos botones se corren a su izquierda */
-#site-nav button:not(.hidden) ~ .visible-links #theme-toggle { right: 52px; }
-#site-nav button:not(.hidden) ~ .visible-links #lang-toggle { right: 98px; }
-#site-nav button:not(.hidden) ~ .visible-links { padding-right: 150px; }
+/* En celular: botones en su lugar normal y nombre en una sola línea */
+@media (max-width: 768px) {
+  #site-nav .visible-links li:first-child { white-space: nowrap; padding-right: 0.8rem; }
+  #site-nav .visible-links li:first-child a { font-size: 0.98rem; }
+  #site-nav .visible-links li:first-child + li a { margin-left: 0.8rem; }
+  #site-nav .visible-links #lang-toggle a { margin: 0 0.35rem !important; }
+  #site-nav .visible-links #theme-toggle a { margin: 0 0.35rem !important; }
+}
