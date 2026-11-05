@@ -34,3 +34,4 @@ assets/js/main.min.js
 .env*
 /certificados/
 /foto2.jpg
+/cv-latex/
