@@ -619,7 +619,7 @@ html[data-theme="dark"] .cinta { background: #0b0a07; border-color: #3a362b; }
 .greedy-nav .visible-links li:first-child + li a { margin-left: 1.8rem; }
 /* página actual subrayada en rojo */
 .greedy-nav .visible-links .masthead__menu-item.selected:not(:first-child) a::before { transform: scaleX(1); background: var(--rojo); }
-.greedy-nav .visible-links a::before { background: var(--rojo); height: 3px; }
+.greedy-nav .visible-links li:not(:first-child) a::before { background: var(--rojo); height: 3px; }
 /* botón Contacto */
 .greedy-nav a[href^="mailto:"] {
   padding: 0.3rem 0.95rem !important;
@@ -631,3 +631,8 @@ html[data-theme="dark"] .cinta { background: #0b0a07; border-color: #3a362b; }
 }
 .greedy-nav a[href^="mailto:"]::before { display: none; }
 .greedy-nav .hidden-links a[href^="mailto:"] { display: inline-block; margin: 6px 12px !important; }
+
+/* El cuadrito con la «L» junto al nombre no lleva subrayado */
+.greedy-nav .visible-links li:first-child a::before {
+  position: static; transform: none !important; height: 1.5em; width: 1.5em; background: var(--rojo);
+}
