@@ -697,3 +697,18 @@ html[data-theme="dark"] .cinta { background: #0b0a07; border-color: #3a362b; }
   vertical-align: middle;
   transform: none !important;
 }
+
+/* «Ver certificado» discreto */
+.certs__ver {
+  margin-block-start: 0.55rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--tinta-2) !important;
+  font-size: 0.74rem;
+  font-weight: 600;
+  gap: 0.35em;
+}
+.certs__ver i { font-size: 0.8em; }
+.certs__ver:hover { background: none; color: var(--rojo) !important; text-decoration: underline; }
