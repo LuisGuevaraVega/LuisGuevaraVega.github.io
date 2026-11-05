@@ -836,3 +836,12 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
   #site-nav .visible-links #lang-toggle a { margin: 0 0.35rem !important; }
   #site-nav .visible-links #theme-toggle a { margin: 0 0.35rem !important; }
 }
+
+/* Nombre del menú siempre en una línea; en pantallas muy angostas, más compacto */
+#site-nav .visible-links li:first-child { white-space: nowrap; }
+@media (max-width: 400px) {
+  #site-nav .visible-links li:first-child { padding-right: 0.5rem; }
+  #site-nav .visible-links li:first-child a { font-size: 0.86rem; }
+  #site-nav .visible-links li:first-child a::before { margin-right: 0.4em; }
+  #site-nav .visible-links #lang-toggle a, #site-nav .visible-links #theme-toggle a { margin: 0 0.2rem !important; }
+}
