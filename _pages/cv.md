@@ -3,7 +3,7 @@ layout: ancho
 title: "CV"
 permalink: /cv/
 kicker: "Currículum · actualizado a noviembre de 2026"
-bajada: "Economista PUCP con experiencia en monitoreo y evaluación de proyectos sociales. Uso Python, R, Stata y Power BI para dar seguimiento a lo que importa."
+bajada: "Licenciado en Economía por la PUCP, con experiencia en monitoreo y evaluación de proyectos sociales. Uso Python, R, Stata y Power BI para dar seguimiento a lo que importa."
 ---
 
 <p class="hero__botones">
@@ -16,7 +16,12 @@ bajada: "Economista PUCP con experiencia en monitoreo y evaluación de proyectos
 
 <ul class="linea-tiempo">
   <li>
-    <span class="cuando">JUN 2026 – HOY · COPEME</span>
+    <span class="cuando">ACTUAL · COPEME</span>
+    <h3>Analista y Gestor de Datos de Monitoreo</h3>
+    <p>Lidero el monitoreo del nuevo proyecto asociado al puerto de Chancay, con financiamiento de la cooperación alemana. Doy consultoría a cooperativas de café en Pichanaki (Junín) y automatizo datos para asociaciones de castaña en Puerto Maldonado (Madre de Dios).</p>
+  </li>
+  <li>
+    <span class="cuando">JUN 2026 · COPEME</span>
     <h3>Especialista de Monitoreo y Evaluación</h3>
     <p>Proyecto «Tejiendo Futuros: Información que Empodera» (Ayacucho y Amazonas), gestionado por SENAJU con financiamiento de APC Colombia. Elaboré los planes MERL y de sistematización de experiencias.</p>
   </li>
@@ -41,9 +46,19 @@ bajada: "Economista PUCP con experiencia en monitoreo y evaluación de proyectos
 
 <ul class="linea-tiempo">
   <li>
+    <span class="cuando">2026 · COLEGIO DE ECONOMISTAS DE LIMA</span>
+    <h3>Economista colegiado (CEL)</h3>
+    <p>Recién incorporado al Colegio de Economistas de Lima. <a href="https://lnkd.in/p/eRGwcDGe">Ver la publicación</a>.</p>
+  </li>
+  <li>
+    <span class="cuando">AGO 2026 – HOY · QLab, Facultad de Ciencias Sociales PUCP</span>
+    <h3>Diplomado de Ciencia de Datos · <mark>Becado</mark></h3>
+    <p>Diplomatura de Especialización en Ciencia de Datos para las Ciencias Sociales y la Gestión Pública, en curso. Python, R y Claude Code aplicados a datos del Perú. Los trabajos están en <a href="{{ site.baseurl }}/proyectos/">Proyectos</a>.</p>
+  </li>
+  <li>
     <span class="cuando">JUL 2026 · PUCP</span>
     <h3>Licenciado en Economía</h3>
-    <p>Mención sobresaliente. <a href="{{ site.baseurl }}/tesis/">Ver la tesis</a>.</p>
+    <p><strong>Mención sobresaliente.</strong> <a href="{{ site.baseurl }}/tesis/">Ver la tesis</a>.</p>
   </li>
   <li>
     <span class="cuando">DIC 2019 – OCT 2024 · PUCP</span>
@@ -51,9 +66,9 @@ bajada: "Economista PUCP con experiencia en monitoreo y evaluación de proyectos
     <p>Quinto superior.</p>
   </li>
   <li>
-    <span class="cuando">2026 · QLab, Facultad de Ciencias Sociales PUCP</span>
-    <h3>Ciencia de datos: Python, R y Claude Code</h3>
-    <p>Beca en la Summer School 2026 y cursos de la diplomatura en ciencia de datos. Los proyectos están en <a href="{{ site.baseurl }}/proyectos/">Proyectos</a>.</p>
+    <span class="cuando">FEB 2026 – ABR 2026 · QLab, Facultad de Ciencias Sociales PUCP</span>
+    <h3>Summer School 2026 · <mark>Becado</mark></h3>
+    <p>Cursos especializados en análisis económico y ciencia de datos del Laboratorio de Inteligencia Artificial y Métodos Computacionales en Ciencias Sociales (QLab).</p>
   </li>
 </ul>
 

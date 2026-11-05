@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "es" 
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Gabriel Guevara Vega" 
+title                    : "Luis G. Guevara Vega" 
 title_separator          : "-"
-name                     : &name "Luis Gabriel Guevara Vega" 
-description              : &description "Economista PUCP. Le pregunto cosas a los datos del Perú: ENAHO, BCRP, satélites y más." # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Luis Guevara Vega" 
+description              : &description "Licenciado en Economía (PUCP). Le pregunto cosas a los datos del Perú: ENAHO, BCRP, satélites y más." # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://luisguevaravega.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,9 +24,9 @@ repository               : "LuisGuevaraVega/LuisGuevaraVega.github.io"
 author:
   # Biographic information
   avatar           : "perfil.jpg" 
-  name             : "Luis Gabriel Guevara Vega" 
+  name             : "Luis Guevara Vega" 
   pronouns         : # example: "she/her"  
-  bio              : "Economista PUCP. Monitoreo y evaluación en COPEME y proyectos de datos sobre el Perú con Python, R y Claude Code." 
+  bio              : "Licenciado en Economía (PUCP). Datos de monitoreo en COPEME y proyectos de datos sobre el Perú con Python, R y Claude Code." 
   location         : "Lima, Perú" 
   employer         : "COPEME" 
   uri              : # URL

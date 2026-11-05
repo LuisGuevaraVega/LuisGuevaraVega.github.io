@@ -11,7 +11,6 @@ cifra: "59.6 s"
 resultado: "de reel en 8 escenas. DeepSeek inventó menos que Qwen, y cada frase se revisó contra el informe."
 excerpt: "Reel vertical narrado con mi voz clonada (Qwen3-TTS) y subtítulos palabra por palabra (Whisper)."
 enlaces:
-  - {texto: "Ver el reel", url: "/videos/"}
   - {texto: "Código", url: "https://github.com/LuisGuevaraVega/reel-incendios"}
   - {texto: "Qwen vs DeepSeek", url: "https://github.com/LuisGuevaraVega/reel-incendios/blob/main/comparacion.md"}
 ---

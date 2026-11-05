@@ -3,7 +3,7 @@ layout: ancho
 title: "Efectos de la regulación de la calidad educativa universitaria sobre la inadecuación profesional de los egresados en el Perú, 2014–2022"
 permalink: /tesis/
 kicker: "Tesis de licenciatura en Economía · PUCP · 2026"
-bajada: "Luis Gabriel Guevara Vega · Asesor: Carlos Archer Pérez Cavero · Sustentada el 21 de julio de 2026 · Mención sobresaliente"
+bajada: "Luis Gabriel Guevara Vega · Asesor: Carlos Archer Pérez Cavero · Sustentada el 21 de julio de 2026 · <strong>Mención sobresaliente</strong>"
 ---
 
 <p class="hero__botones">
@@ -20,7 +20,7 @@ Cuando la SUNEDU otorga o deniega la licencia a una universidad, ¿cambia la pro
   <div class="numero"><b>+44.3 pp</b><span>de probabilidad de empleo no profesional cuando la licencia se deniega</span></div>
 </div>
 
-<figure class="caja">
+<figure class="caja figura-chica">
   <img src="{{ site.baseurl }}/images/proyectos/tesis.jpg" alt="Gráfico de barras: egresados con ocupación no profesional por año. Universidades licenciadas: 45 % en 2014, 48 % en 2019, 54 % en 2021 y 54 % en 2022. No licenciadas: 53 %, 55 %, 59 % y 60 %.">
 </figure>
 
