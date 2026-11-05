@@ -1,16 +1,16 @@
-# Orden de los enlaces del menú superior.
+# Menú de una sola página: cada botón baja a su sección en la portada.
 main:
   - title: "Proyectos"
-    url: /proyectos/
+    url: /#proyectos
 
   - title: "Videos"
-    url: /videos/
+    url: /#videos
 
   - title: "Tesis"
-    url: /tesis/
+    url: /#tesis
 
   - title: "CV"
-    url: /cv/
+    url: /#cv
 
   - title: "Contacto"
     url: "mailto:del@copeme.org.pe"

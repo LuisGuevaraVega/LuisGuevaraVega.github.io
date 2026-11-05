@@ -4,10 +4,13 @@ layout: default
 
 {% include base_path %}
 {% assign proyectos = site.portfolio | sort: "orden" %}
+{% assign p_videos = site.pages | where: "permalink", "/videos/" | first %}
+{% assign p_tesis = site.pages | where: "permalink", "/tesis/" | first %}
+{% assign p_cv = site.pages | where: "permalink", "/cv/" | first %}
 
 <main id="contenido" class="inicio" role="main">
 
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="hero__texto">
       <p class="kicker">Licenciado en Economía · PUCP · Lima, Perú</p>
       <h1>Le pregunto cosas a los datos del Perú <em>hasta que confiesan.</em></h1>
@@ -17,7 +20,7 @@ layout: default
         pobreza, incendios, aprendizajes y empleo.
       </p>
       <div class="hero__botones">
-        <a class="boton boton--rojo" href="{{ base_path }}/proyectos/">Ver proyectos →</a>
+        <a class="boton boton--rojo" href="#proyectos">Ver proyectos →</a>
         <a class="boton" href="{{ base_path }}/files/cv-luis-guevara-vega.pdf">Descargar CV</a>
       </div>
       <ul class="hero__redes">
@@ -48,38 +51,86 @@ layout: default
     </div>
   </div>
 
-  <section class="seccion">
-    <header class="seccion__cabeza">
-      <h2>Proyectos destacados</h2>
-      <a href="{{ base_path }}/proyectos/">Ver los {{ proyectos.size }} proyectos →</a>
+  <section class="seccion caja ahora">
+    <p class="kicker">Ahora mismo</p>
+    <ul class="ahora-lista">
+      <li><span class="emoji" aria-hidden="true">⚓</span><p>Lidero el monitoreo del nuevo proyecto de COPEME asociado al <b>puerto de Chancay</b>, con financiamiento de la cooperación alemana.</p></li>
+      <li><span class="emoji" aria-hidden="true">🤖</span><p>Estoy en la diplomatura de ciencia de datos de <b>QLab PUCP</b>, construyendo cosas con Claude Code.</p></li>
+      <li><span class="emoji" aria-hidden="true">🎓</span><p>Me acabo de incorporar al <b>Colegio de Economistas de Lima (<a href="https://lnkd.in/p/eRGwcDGe">CEL</a>)</b>.</p></li>
+    </ul>
+  </section>
+
+  <!-- ===================== PROYECTOS ===================== -->
+  <section id="proyectos" class="seccion seccion--ancla">
+    <header class="seccion__intro">
+      <p class="kicker">Portafolio · {{ proyectos.size }} proyectos</p>
+      <h2 class="seccion__titulo">Proyectos</h2>
+      <p class="ancho__bajada">Cada tarjeta tiene una pregunta, un resultado con número y los links al código. El mejor va primero.</p>
     </header>
     <div class="tarjetas">
-      {% for p in proyectos %}{% if p.destacado %}
+      {% for p in proyectos %}
         {% include tarjeta.html proyecto=p %}
-      {% endif %}{% endfor %}
+      {% endfor %}
     </div>
   </section>
 
-  <section class="seccion dos-columnas">
-    <article class="caja">
-      <p class="kicker">Tesis de licenciatura · <strong>Mención sobresaliente</strong></p>
-      <h2>¿Sirvió el licenciamiento de universidades para conseguir mejores empleos?</h2>
-      <p>Medí el efecto de la regulación de la SUNEDU sobre la inadecuación profesional de los egresados, con la ENAHO 2014–2022, diferencias en diferencias y variables instrumentales.</p>
-      <div class="numeros">
-        <div class="numero"><b>−16.6 pp</b><span>de empleo no profesional con licencia otorgada</span></div>
-        <div class="numero"><b>+44.3 pp</b><span>de empleo no profesional con licencia denegada</span></div>
-      </div>
-      <a class="boton" href="{{ base_path }}/tesis/">Leer sobre la tesis →</a>
-    </article>
+  <!-- ===================== VIDEOS ===================== -->
+  <section id="videos" class="seccion seccion--ancla">
+    <header class="seccion__intro">
+      <p class="kicker">{{ p_videos.kicker }}</p>
+      <h2 class="seccion__titulo">Videos</h2>
+      <p class="ancho__bajada">{{ p_videos.bajada }}</p>
+    </header>
+    {% capture sec %}{% include secciones/videos.md %}{% endcapture %}
+    <div class="ancho__contenido">{{ sec | markdownify }}</div>
+  </section>
 
-    <article class="caja">
-      <p class="kicker">Ahora mismo</p>
-      <ul class="ahora-lista">
-        <li><span class="emoji" aria-hidden="true">⚓</span><p>Lidero el monitoreo del nuevo proyecto de COPEME asociado al <b>puerto de Chancay</b>, con financiamiento de la cooperación alemana.</p></li>
-        <li><span class="emoji" aria-hidden="true">🤖</span><p>Estoy en la diplomatura de ciencia de datos de <b>QLab PUCP</b>, construyendo cosas con Claude Code.</p></li>
-        <li><span class="emoji" aria-hidden="true">🎓</span><p>Me acabo de incorporar al <b>Colegio de Economistas de Lima (<a href="https://lnkd.in/p/eRGwcDGe">CEL</a>)</b>.</p></li>
-      </ul>
-    </article>
+  <!-- ===================== TESIS ===================== -->
+  <section id="tesis" class="seccion seccion--ancla">
+    <header class="seccion__intro">
+      <p class="kicker">{{ p_tesis.kicker }}</p>
+      <h2 class="seccion__titulo">Tesis</h2>
+      <p class="ancho__bajada"><strong class="seccion__subtitulo">{{ p_tesis.title }}</strong><br>{{ p_tesis.bajada }}</p>
+    </header>
+    {% capture sec %}{% include secciones/tesis.md %}{% endcapture %}
+    <div class="ancho__contenido">{{ sec | markdownify }}</div>
+  </section>
+
+  <!-- ===================== CV ===================== -->
+  <section id="cv" class="seccion seccion--ancla">
+    <header class="seccion__intro">
+      <p class="kicker">{{ p_cv.kicker }}</p>
+      <h2 class="seccion__titulo">CV</h2>
+      <p class="ancho__bajada">{{ p_cv.bajada }}</p>
+    </header>
+    {% capture sec %}{% include secciones/cv.md %}{% endcapture %}
+    <div class="ancho__contenido">{{ sec | markdownify }}</div>
   </section>
 
 </main>
+
+<script>
+/* Menú de una sola página: marca la sección visible y cierra el menú de celular al elegir. */
+(function () {
+  var enlaces = {};
+  document.querySelectorAll('#site-nav a[href*="#"]').forEach(function (a) {
+    var id = a.getAttribute('href').split('#')[1];
+    if (id) (enlaces[id] = enlaces[id] || []).push(a);
+    a.addEventListener('click', function () {
+      var oculto = document.querySelector('#site-nav .hidden-links');
+      var boton = document.querySelector('#site-nav button');
+      if (oculto && oculto.contains(a)) { oculto.classList.add('hidden'); if (boton) boton.classList.remove('close'); }
+    });
+  });
+  if (!('IntersectionObserver' in window)) return;
+  var marcar = function (id) {
+    Object.keys(enlaces).forEach(function (k) {
+      enlaces[k].forEach(function (a) { a.parentElement.classList.toggle('selected', k === id); });
+    });
+  };
+  var obs = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (e) { if (e.isIntersecting) marcar(e.target.id); });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('.seccion--ancla, #inicio').forEach(function (s) { obs.observe(s); });
+})();
+</script>
