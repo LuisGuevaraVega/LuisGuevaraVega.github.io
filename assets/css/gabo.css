@@ -733,3 +733,15 @@ html { scroll-behavior: smooth; }
 @media (min-width: 860px) { .ahora .ahora-lista { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } }
 /* el visor y los videos dentro de la portada respetan el ancho */
 .inicio .videos { max-width: 440px; }
+
+/* Cuadrito del menú con las iniciales LGV */
+.greedy-nav .visible-links li:first-child a::before {
+  content: "LGV" !important;
+  width: auto;
+  height: 2.1em;
+  padding: 0 0.55em;
+  font-size: 0.68em;
+  letter-spacing: 0.05em;
+  border-radius: 0.5em;
+  margin-right: 0.6em;
+}
