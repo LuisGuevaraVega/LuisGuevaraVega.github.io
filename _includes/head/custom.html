@@ -31,11 +31,16 @@
   document.documentElement.setAttribute('lang', l);
 })();
 </script>
+<style>
+  /* Regla del idioma dentro de la página: no depende de la hoja de estilos en caché */
+  html:not([data-lang="en"]) [data-l="en"],
+  html[data-lang="en"] [data-l="es"] { display: none !important; }
+</style>
 
 <!-- Estilo propio: tipografías y hoja de estilos del portafolio -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&family=JetBrains+Mono:wght@400;700&display=swap">
-<link rel="stylesheet" href="{{ base_path }}/assets/css/gabo.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/gabo.css?v={{ site.time | date: '%s' }}">
 
 <!-- end custom head snippets -->
