@@ -813,7 +813,7 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
 }
 /* Solo en escritorio: EN y tema anclados al borde derecho del contenido */
 @media (min-width: 769px) {
-  #site-nav .visible-links { padding-right: 104px; }   /* reserva el espacio de los dos botones para el cálculo del menú */
+  #site-nav { padding-right: 104px; }   /* reserva el espacio de los dos botones: el menú mide el ancho sin este margen */
   #site-nav .visible-links li.tail {
     position: absolute;
     top: 50%;
@@ -826,7 +826,7 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
   /* cuando aparece el botón de tres rayas (celular), los dos botones se corren a su izquierda */
   #site-nav button:not(.hidden) ~ .visible-links #theme-toggle { right: 52px; }
   #site-nav button:not(.hidden) ~ .visible-links #lang-toggle { right: 98px; }
-  #site-nav button:not(.hidden) ~ .visible-links { padding-right: 150px; }
+  #site-nav:has(> button:not(.hidden)) { padding-right: 150px; }
 }
 /* En celular: botones en su lugar normal y nombre en una sola línea */
 @media (max-width: 768px) {
