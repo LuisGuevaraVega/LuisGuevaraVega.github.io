@@ -804,3 +804,24 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
 @media (prefers-reduced-motion: reduce) {
   .herramientas li, .herramientas li:hover { transition: none; transform: none; }
 }
+
+/* ---------- Menú alineado con el contenido; EN y tema al borde derecho ---------- */
+.masthead__inner-wrap {
+  max-width: 1180px !important;
+  padding: 0.85em 16px !important;      /* mismo ancho y márgenes que .inicio */
+  box-sizing: border-box;
+}
+#site-nav .visible-links { padding-right: 104px; }   /* reserva el espacio de los dos botones para el cálculo del menú */
+#site-nav .visible-links li.tail {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#site-nav .visible-links #theme-toggle { right: 0; }
+#site-nav .visible-links #theme-toggle a { margin: 0 !important; }
+#site-nav .visible-links #lang-toggle { right: 46px; }
+#site-nav .visible-links #lang-toggle a { margin: 0 !important; }
+/* cuando aparece el botón de tres rayas (celular), los dos botones se corren a su izquierda */
+#site-nav button:not(.hidden) ~ .visible-links #theme-toggle { right: 52px; }
+#site-nav button:not(.hidden) ~ .visible-links #lang-toggle { right: 98px; }
+#site-nav button:not(.hidden) ~ .visible-links { padding-right: 150px; }
