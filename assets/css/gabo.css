@@ -94,7 +94,7 @@ mark, .cifra {
   font-size: 1.15em;
 }
 .masthead__menu-item--lg a::before {
-  content: "g";
+  content: "L";
   display: inline-grid;
   place-items: center;
   width: 1.5em;
@@ -398,7 +398,7 @@ html[data-theme="dark"] .boton--rojo { color: #16150f !important; }
 
 /* ---------- Videos ---------- */
 .videos { display: grid; gap: 2rem; grid-template-columns: 1fr; max-width: 440px; }
-.figura-chica { max-width: 640px; }
+.figura-chica { max-width: 720px; margin-inline: auto; }
 .figura-chica img { width: 100%; }
 .video {
   background: var(--tarjeta);
@@ -500,3 +500,24 @@ html[data-theme="dark"] .boton--rojo { color: #16150f !important; }
 /* Evita scroll horizontal en móvil */
 html, body { overflow-x: hidden; }
 img, video, iframe { max-width: 100%; }
+
+/* ---------- Certificaciones ---------- */
+.certs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.certs li {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  background: var(--tarjeta);
+  border: 2px solid var(--linea);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--sombra);
+}
+.certs h3 { margin: 0.5rem 0 0.25rem; font-size: 1.05rem; line-height: 1.25; }
+.certs p { margin: 0; font-size: 0.9rem; color: var(--tinta-2); }
+.certs .certs__det { font-family: var(--f-mono); font-size: 0.78rem; margin-top: 0.3rem; }

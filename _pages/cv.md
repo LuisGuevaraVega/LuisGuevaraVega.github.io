@@ -3,11 +3,11 @@ layout: ancho
 title: "CV"
 permalink: /cv/
 kicker: "Currículum · actualizado a noviembre de 2026"
-bajada: "Licenciado en Economía por la PUCP, con experiencia en monitoreo y evaluación de proyectos sociales. Uso Python, R, Stata y Power BI para dar seguimiento a lo que importa."
+bajada: "Licenciado en Economía por la PUCP, con experiencia en monitoreo y evaluación de proyectos sociales. Uso Python, R, Stata, Power BI y Data Studio para dar seguimiento a lo que importa."
 ---
 
 <p class="hero__botones">
-  <a class="boton boton--rojo" href="{{ site.baseurl }}/files/cv-luis-guevara-vega.pdf">Descargar CV en PDF</a>
+  <a class="boton boton--rojo" href="{{ site.baseurl }}/files/cv-luis-guevara-vega.pdf">Descargar CV</a>
   <a class="boton" href="https://www.linkedin.com/in/gabriel-guevara-vega/">LinkedIn</a>
   <a class="boton" href="mailto:del@copeme.org.pe">del@copeme.org.pe</a>
 </p>
@@ -17,11 +17,11 @@ bajada: "Licenciado en Economía por la PUCP, con experiencia en monitoreo y eva
 <ul class="linea-tiempo">
   <li>
     <span class="cuando">ACTUAL · COPEME</span>
-    <h3>Analista y Gestor de Datos de Monitoreo</h3>
+    <h3>Analista de Monitoreo y Gestión de Datos</h3>
     <p>Lidero el monitoreo del nuevo proyecto asociado al puerto de Chancay, con financiamiento de la cooperación alemana. Doy consultoría a cooperativas de café en Pichanaki (Junín) y automatizo datos para asociaciones de castaña en Puerto Maldonado (Madre de Dios).</p>
   </li>
   <li>
-    <span class="cuando">JUN 2026 · COPEME</span>
+    <span class="cuando">JUN 2026 – AGO 2026 · COPEME</span>
     <h3>Especialista de Monitoreo y Evaluación</h3>
     <p>Proyecto «Tejiendo Futuros: Información que Empodera» (Ayacucho y Amazonas), gestionado por SENAJU con financiamiento de APC Colombia. Elaboré los planes MERL y de sistematización de experiencias.</p>
   </li>
@@ -46,9 +46,9 @@ bajada: "Licenciado en Economía por la PUCP, con experiencia en monitoreo y eva
 
 <ul class="linea-tiempo">
   <li>
-    <span class="cuando">2026 · COLEGIO DE ECONOMISTAS DE LIMA</span>
-    <h3>Economista colegiado (CEL)</h3>
-    <p>Recién incorporado al Colegio de Economistas de Lima. <a href="https://lnkd.in/p/eRGwcDGe">Ver la publicación</a>.</p>
+    <span class="cuando">NOV 2026 · COLEGIO DE ECONOMISTAS DE LIMA</span>
+    <h3>Economista colegiado (<a href="https://lnkd.in/p/eRGwcDGe">CEL</a>)</h3>
+    <p>Miembro titular del Colegio de Economistas de Lima, con colegiatura CEL N.° 12114.</p>
   </li>
   <li>
     <span class="cuando">AGO 2026 – HOY · QLab, Facultad de Ciencias Sociales PUCP</span>
@@ -74,10 +74,19 @@ bajada: "Licenciado en Economía por la PUCP, con experiencia en monitoreo y eva
 
 ## Certificaciones
 
-- **Big Data y Data Analytics para Aplicaciones Financieras**, Facultad de Ciencias Contables PUCP (nov. 2025)
-- **Monitoreo y Evaluación de Programas y Proyectos Sociales**, REDINFOR Perú (jul. 2025)
-- **Análisis de Indicadores Sociodemográficos con la ENAHO**, QLab PUCP e INEI (dic. 2022)
-- **Inglés avanzado**, Idiomas PUCP (dic. 2025)
+<ul class="certs">
+  <li><span class="chip">2026</span><h3>Econometría Aplicada Avanzada</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p></li>
+  <li><span class="chip">2026</span><h3>Introducción a Machine Learning para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">32 h · 2 créditos</p></li>
+  <li><span class="chip">2026</span><h3>Prompt Engineering usando GPT-4</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h</p></li>
+  <li><span class="chip">2026</span><h3>Fundamentos de Programación en Python para Economía</h3><p>Summer School · Facultad de Ciencias Sociales PUCP</p><p class="certs__det">16 h · 1 crédito</p></li>
+  <li><span class="chip">2025</span><h3>Inglés avanzado (nivel C1 del MCER)</h3><p>Idiomas PUCP</p><p class="certs__det">Programa culminado</p></li>
+  <li><span class="chip">2025</span><h3>Big Data y Data Analytics para Aplicaciones Financieras</h3><p>Facultad de Ciencias Contables PUCP</p><p class="certs__det">48 h</p></li>
+  <li><span class="chip">2025</span><h3>Monitoreo y Evaluación de Programas y Proyectos Sociales</h3><p>REDINFOR Perú</p><p class="certs__det">120 h pedagógicas</p></li>
+  <li><span class="chip">2024</span><h3>Laboratorio de Programación: R y Python</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p></li>
+  <li><span class="chip">2023</span><h3>Laboratorio de Econometría: Stata</h3><p>Especialidad de Economía PUCP</p><p class="certs__det">Curso del plan de estudios</p></li>
+  <li><span class="chip">2023</span><h3>Especialización en SQL</h3><p>Netzun</p><p class="certs__det">10 h</p></li>
+  <li><span class="chip">2022</span><h3>Análisis de Indicadores Sociodemográficos con la ENAHO</h3><p>Facultad de Ciencias Sociales PUCP e INEI</p><p class="certs__det">24 h</p></li>
+</ul>
 
 ## Herramientas
 
