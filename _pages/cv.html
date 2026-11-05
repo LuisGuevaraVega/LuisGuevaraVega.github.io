@@ -1,0 +1,15 @@
+---
+layout: ancho
+permalink: "/cv/"
+title: "CV"
+title_en: "CV"
+kicker: "Currículum · actualizado a noviembre de 2026"
+kicker_en: "Résumé · updated November 2026"
+bajada: "Licenciado en Economía por la PUCP, con experiencia en monitoreo y evaluación de proyectos sociales. Uso Python, R, Stata, Power BI y Data Studio para dar seguimiento a lo que importa."
+bajada_en: "Economist from PUCP with experience in monitoring and evaluation of social projects. I use Python, R, Stata, Power BI and Data Studio to keep track of what matters."
+---
+
+{% capture es %}{% include secciones/cv.md %}{% endcapture %}{% capture en %}{% include secciones/cv.en.md %}{% endcapture %}
+<div data-l="es">{{ es | markdownify }}</div>
+<div data-l="en">{{ en | markdownify }}</div>
+{% include visor.html %}

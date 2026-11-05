@@ -1,16 +1,21 @@
 # Menú de una sola página: cada botón baja a su sección en la portada.
 main:
   - title: "Proyectos"
+    title_en: "Projects"
     url: /#proyectos
 
   - title: "Videos"
+    title_en: "Videos"
     url: /#videos
 
   - title: "Tesis"
+    title_en: "Thesis"
     url: /#tesis
 
   - title: "CV"
+    title_en: "CV"
     url: /#cv
 
   - title: "Contacto"
+    title_en: "Contact"
     url: "mailto:del@copeme.org.pe"

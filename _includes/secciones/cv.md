@@ -82,38 +82,6 @@
   <li><span class="chip">2022</span><h3>Análisis de Indicadores Sociodemográficos con la ENAHO</h3><p>Facultad de Ciencias Sociales PUCP e INEI</p><p class="certs__det">24 h</p><p class="certs__codigo">Registro N.° 2022-414-B-0001060-01</p><a class="certs__ver" href="{{ site.baseurl }}/files/certificados/enaho-inei-pucp.jpg" target="_blank" rel="noopener" data-titulo="Análisis de Indicadores Sociodemográficos con la ENAHO"><i class="fas fa-eye" aria-hidden="true"></i> Ver certificado</a></li>
 </ul>
 
-
-<dialog id="visor-certificado" class="visor" aria-label="Certificado">
-  <div class="visor__barra"><span class="visor__titulo"></span><button type="button" class="visor__cerrar" aria-label="Cerrar">✕</button></div>
-  <div class="visor__cuerpo"><img alt=""></div>
-</dialog>
-<script>
-(function () {
-  var d = document.getElementById("visor-certificado");
-  if (!d || typeof d.showModal !== "function") return;
-  var img = d.querySelector("img"), tit = d.querySelector(".visor__titulo");
-  document.querySelectorAll(".certs__ver").forEach(function (a) {
-    a.addEventListener("click", function (e) {
-      e.preventDefault();
-      img.src = a.href; img.alt = "Certificado: " + a.dataset.titulo; tit.textContent = a.dataset.titulo;
-      d.showModal();
-    });
-  });
-  d.querySelector(".visor__cerrar").addEventListener("click", function () { d.close(); });
-  d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
-})();
-</script>
-
 ## Herramientas
 
-<ul class="chips">
-  <li class="chip">Python</li>
-  <li class="chip">R</li>
-  <li class="chip">Stata</li>
-  <li class="chip">SQL</li>
-  <li class="chip">Power BI</li>
-  <li class="chip">Looker Studio</li>
-  <li class="chip">Power Automate</li>
-  <li class="chip">Claude Code</li>
-  <li class="chip">Git y GitHub</li>
-</ul>
+{% include herramientas.html %}

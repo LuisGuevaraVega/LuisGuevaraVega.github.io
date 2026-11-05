@@ -745,3 +745,38 @@ html { scroll-behavior: smooth; }
   border-radius: 0.5em;
   margin-right: 0.6em;
 }
+
+/* ---------- Herramientas con logos oficiales ---------- */
+.herramientas {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 0.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  max-width: 52em;
+}
+.herramientas li {
+  display: flex; align-items: center; gap: 0.65rem;
+  margin: 0; padding: 0.55rem 0.8rem;
+  background: var(--tarjeta);
+  border: 2px solid var(--linea); border-radius: 12px;
+  box-shadow: 3px 3px 0 var(--sombra);
+  font-weight: 700; font-size: 0.92rem;
+}
+.herramientas img {
+  width: 30px; height: 30px; flex: none; object-fit: contain;
+  padding: 3px; background: #fff; border-radius: 8px;   /* fondo blanco: los logos se ven también en modo oscuro */
+  border: 0 !important;
+}
+
+/* ---------- Idioma: se muestra solo el texto del idioma activo ---------- */
+html:not([data-lang="en"]) [data-l="en"],
+html[data-lang="en"] [data-l="es"] { display: none !important; }
+
+#lang-toggle a {
+  display: inline-grid !important; place-items: center;
+  min-width: 2.4em; padding: 0.2rem 0.5rem !important;
+  border: 2px solid var(--linea); border-radius: 8px;
+  font-family: var(--f-mono); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.05em;
+  cursor: pointer; user-select: none;
+}
+#lang-toggle a::before { display: none; }
+#lang-toggle a:hover { background: var(--resaltador); color: #1c1a15 !important; }

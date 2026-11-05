@@ -1,0 +1,20 @@
+<dialog id="visor-certificado" class="visor" aria-label="Certificado">
+  <div class="visor__barra"><span class="visor__titulo"></span><button type="button" class="visor__cerrar" aria-label="Cerrar">✕</button></div>
+  <div class="visor__cuerpo"><img alt=""></div>
+</dialog>
+<script>
+(function () {
+  var d = document.getElementById("visor-certificado");
+  if (!d || typeof d.showModal !== "function") return;
+  var img = d.querySelector("img"), tit = d.querySelector(".visor__titulo");
+  document.querySelectorAll(".certs__ver").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      img.src = a.href; img.alt = a.dataset.titulo; tit.textContent = a.dataset.titulo;
+      d.showModal();
+    });
+  });
+  d.querySelector(".visor__cerrar").addEventListener("click", function () { d.close(); });
+  d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+})();
+</script>

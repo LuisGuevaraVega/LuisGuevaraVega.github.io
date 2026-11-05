@@ -4,7 +4,7 @@
 <div class="page__footer-follow">
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+      <li><strong><span data-l="es">Seguir:</span><span data-l="en">Follow:</span></strong></li>
     {% endif %}
     {% if site.author.github %}
       <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
@@ -20,6 +20,6 @@
 {% endif %}
 
 <div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. Hecho con <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> y <a href="https://claude.com/claude-code">Claude Code</a>, publicado en GitHub Pages.<br />
-  Actualizado el {{ "now" | date: '%Y-%m-%d' }} · <a href="{{ base_path }}/sitemap/">Mapa del sitio</a>
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. <span data-l="es">Hecho con</span><span data-l="en">Made with</span> <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> <span data-l="es">y</span><span data-l="en">and</span> <a href="https://claude.com/claude-code">Claude Code</a>, <span data-l="es">publicado en GitHub Pages.</span><span data-l="en">hosted on GitHub Pages.</span><br />
+  <span data-l="es">Actualizado el</span><span data-l="en">Updated</span> {{ "now" | date: '%Y-%m-%d' }} · <a href="{{ base_path }}/sitemap/"><span data-l="es">Mapa del sitio</span><span data-l="en">Sitemap</span></a>
 </div>

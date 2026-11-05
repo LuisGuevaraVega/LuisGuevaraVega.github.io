@@ -12,6 +12,17 @@ resultado: "de jóvenes nini en 2025, después de un pico de 28.3 % en 2020. Ent
 excerpt: "Reporte reproducible en Quarto con 12 años de microdatos de la ENAHO."
 enlaces:
   - {texto: "Código y reporte", url: "https://github.com/LuisGuevaraVega/Tarea_R_G7"}
+title_en: "Young people not in education or employment in Peru, 2015–2025"
+contexto_en: "R Fundamentals · QLab PUCP · 2026 · group project (G7)"
+pregunta_en: "How did the share of 15- to 29-year-olds who neither study nor work change, and where is it concentrated?"
+resultado_en: "of young people were NEET in 2025, after a peak of 28.3 % in 2020. Among women it is 22.5 %; among men, 13.1 %."
+cuerpo_en: |
+  Final project for the R Fundamentals course, with Rodrigo Norabuena and Marco Virú. It uses the household-member, education and employment modules of the ENAHO survey from 2014 to 2025: more than 1.5 million person records.
+
+  The Quarto report is self-contained: it imports, cleans, analyzes and writes. The slides recompute nothing; they read the tables the report exports, so a slide can never show a number different from the document.
+
+  - **The 2020 jump** (+10.9 pp over 2019) is the pandemic. By 2025 the rate was back to its 2019 level, with no significant difference.
+  - **The gender gap is the largest:** the rate among young women is almost double that of men.
 ---
 
 Trabajo final del curso Fundamentos de R, con Rodrigo Norabuena y Marco Virú. Usa los módulos de miembros del hogar, educación y empleo de la ENAHO de 2014 a 2025: más de 1.5 millones de registros de personas.

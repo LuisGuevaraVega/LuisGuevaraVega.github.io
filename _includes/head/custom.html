@@ -22,6 +22,16 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#fbf6ea"/>
 
+<!-- Idioma: se aplica antes de pintar para que no parpadee -->
+<script>
+(function () {
+  var l = 'es';
+  try { l = localStorage.getItem('idioma') || 'es'; } catch (e) {}
+  document.documentElement.setAttribute('data-lang', l);
+  document.documentElement.setAttribute('lang', l);
+})();
+</script>
+
 <!-- Estilo propio: tipografías y hoja de estilos del portafolio -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -13,6 +13,15 @@ excerpt: "Cruce de lluvia de Open-Meteo con decretos de la PCM, en un dashboard 
 enlaces:
   - {texto: "Dashboard", url: "https://repositoriog1fundpython-fp6ocm6megy3k7eaoagk9r.streamlit.app/"}
   - {texto: "Código", url: "https://github.com/LuisGuevaraVega/Repositorio_G1_FundPython/tree/main/assignment_3"}
+title_en: "Does the government declare emergencies where it rains most?"
+contexto_en: "Python Fundamentals · QLab PUCP · 2026 · group project (G1)"
+pregunta_en: "Did the 2022 rain emergency declarations match the regions where it rained the most?"
+cifra_en: "0 of 3"
+resultado_en: "rainiest regions (Loreto, Ucayali and Áncash) received a rain emergency declaration."
+cuerpo_en: |
+  We compared rainfall in each region between January and May 2022 (Open-Meteo) with the rain emergency declarations issued by the Prime Minister's Office, which we scraped from gob.pe. The two sources were joined by ubigeo code.
+
+  The three regions that did get a declaration rank 13th (Ayacucho), 15th (Amazonas) and 20th (Piura) out of 25. **With a single decree and three cases, the comparison is fragile.** It describes this season, but it does not prove that the government never declares emergencies where it rains most.
 ---
 
 Comparamos la lluvia de cada departamento entre enero y mayo de 2022 (Open-Meteo) con las declaratorias de emergencia por lluvias de la PCM, que recogimos con scraping de gob.pe. Las dos fuentes se unieron por ubigeo.

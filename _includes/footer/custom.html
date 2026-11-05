@@ -3,4 +3,22 @@
 <!-- Support for MathJax -->
 <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
 
+<!-- Botón de idioma ES/EN: cambia el sitio sin recargar y recuerda la elección -->
+<script>
+(function () {
+  var html = document.documentElement;
+  function aplicar(l) {
+    html.setAttribute('data-lang', l);
+    html.setAttribute('lang', l);
+    try { localStorage.setItem('idioma', l); } catch (e) {}
+    window.dispatchEvent(new Event('resize'));   // el menú vuelve a medir sus botones
+  }
+  var b = document.querySelector('#lang-toggle a');
+  if (!b) return;
+  function cambiar(e) { e.preventDefault(); aplicar(html.getAttribute('data-lang') === 'en' ? 'es' : 'en'); }
+  b.addEventListener('click', cambiar);
+  b.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') cambiar(e); });
+})();
+</script>
+
 <!-- end custom footer snippets -->

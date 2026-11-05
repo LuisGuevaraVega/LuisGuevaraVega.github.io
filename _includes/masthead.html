@@ -15,9 +15,12 @@
               {% assign domain = base_path %}
             {% endif %}
             <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              <a href="{{ domain }}{{ link.url }}"><span data-l="es">{{ link.title }}</span><span data-l="en">{{ link.title_en | default: link.title }}</span></a>
             </li>
           {% endfor %}
+          <li id="lang-toggle" class="masthead__menu-item persist tail">
+            <a role="button" tabindex="0" title="Cambiar idioma / Change language"><span data-l="es">EN</span><span data-l="en">ES</span></a>
+          </li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>

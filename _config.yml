@@ -27,6 +27,7 @@ author:
   name             : "Luis Guevara Vega" 
   pronouns         : # example: "she/her"  
   bio              : "Licenciado en Economía (PUCP). Especialista de Monitoreo y Evaluación en COPEME y proyectos de datos sobre el Perú con Python, R y Claude Code." 
+  bio_en           : "Economist (PUCP). Monitoring and Evaluation Specialist at COPEME, building data projects about Peru with Python, R and Claude Code."
   location         : "Lima, Perú" 
   employer         : "COPEME" 
   uri              : # URL

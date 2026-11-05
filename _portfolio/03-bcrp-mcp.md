@@ -13,6 +13,25 @@ excerpt: "Servidor MCP con FastMCP que le da a Claude las series oficiales del B
 enlaces:
   - {texto: "Código", url: "https://github.com/LuisGuevaraVega/bcrp-mcp"}
   - {texto: "Informe de la evaluación", url: "https://github.com/LuisGuevaraVega/bcrp-mcp/blob/main/informe.md"}
+title_en: "An MCP server with the Central Bank of Peru's 17,167 series"
+contexto_en: "Data Science with Python · QLab PUCP · October 2026"
+pregunta_en: "How many official Central Bank of Peru figures does Claude get right from memory, and how many with a custom server?"
+cifra_en: "12 of 12"
+resultado_en: "correct figures with the MCP. From memory it got 0, and searching the web, 8."
+cuerpo_en: |
+  An [MCP](https://modelcontextprotocol.io) server built with FastMCP that gives Claude access to the 17,167 statistical series of the Central Reserve Bank of Peru (BCRP) and, for regional comparisons, to World Bank indicators. Python does the math, not the model. Every figure comes from a repeatable call and carries the URL of its source.
+
+  ## What it can do
+
+  - **Search series and fetch their data**, with warnings when a series is discontinued or does not reach the requested period.
+  - **Transform the data:** year-on-year or cumulative change, base-100 indices and real values deflated with the Lima CPI. The results match the figures published by the BCRP, and the tests check it.
+  - **Make publication-style charts and export to Excel**, with a metadata sheet.
+  - **Compare Peru with other countries** through the World Bank API. This tool is my own addition.
+  - **Write a macroeconomic brief** that cites the code and period of every figure.
+
+  ## The evaluation
+
+  I asked Claude 12 questions about 2025 and 2026 figures. From memory it answered "I don't know" to all of them, without making anything up. With the MCP it got all 12 right and cited the series and URL for each one. In a second run, web search got 8 and the MCP, 11.
 ---
 
 Un servidor [MCP](https://modelcontextprotocol.io) hecho con FastMCP que le da a Claude acceso a las 17,167 series estadísticas del Banco Central de Reserva del Perú y, para comparar con la región, a los indicadores del Banco Mundial. Las cuentas las hace Python y no el modelo. Cada cifra sale de una llamada que se puede repetir y viene con la URL de su fuente.

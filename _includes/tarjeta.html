@@ -6,10 +6,12 @@
   </a>
   <div class="tarjeta__cuerpo">
     <p class="tarjeta__etiquetas">{% for e in p.etiquetas %}<span class="chip">{{ e }}</span>{% endfor %}</p>
-    <h3><a href="{{ base_path }}{{ p.url }}">{{ p.title }}</a></h3>
-    <p class="tarjeta__pregunta"><b>Pregunta:</b> {{ p.pregunta }}</p>
-    <p class="tarjeta__resultado"><span class="cifra">{{ p.cifra }}</span> {{ p.resultado }}</p>
-    <p class="tarjeta__contexto">{{ p.contexto }}</p>
-    <p class="tarjeta__enlaces">{% for l in p.enlaces %}{% if l.url contains "github.com" and l.texto contains "Código" %}<a class="enlace-github" href="{{ l.url }}" aria-label="{{ l.texto }} en GitHub" title="{{ l.texto }} en GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>{% else %}<a href="{{ l.url }}">{{ l.texto }}</a>{% endif %}{% endfor %}</p>
+    <h3><a href="{{ base_path }}{{ p.url }}"><span data-l="es">{{ p.title }}</span><span data-l="en">{{ p.title_en | default: p.title }}</span></a></h3>
+    <p class="tarjeta__pregunta" data-l="es"><b>Pregunta:</b> {{ p.pregunta }}</p>
+    <p class="tarjeta__pregunta" data-l="en"><b>Question:</b> {{ p.pregunta_en | default: p.pregunta }}</p>
+    <p class="tarjeta__resultado" data-l="es"><span class="cifra">{{ p.cifra }}</span> {{ p.resultado }}</p>
+    <p class="tarjeta__resultado" data-l="en"><span class="cifra">{{ p.cifra_en | default: p.cifra }}</span> {{ p.resultado_en | default: p.resultado }}</p>
+    <p class="tarjeta__contexto"><span data-l="es">{{ p.contexto }}</span><span data-l="en">{{ p.contexto_en | default: p.contexto }}</span></p>
+    <p class="tarjeta__enlaces">{% for l in p.enlaces %}{% assign t_en = site.data.i18n.enlaces[l.texto] | default: l.texto %}{% if l.url contains "github.com" and l.texto contains "Código" %}<a class="enlace-github" href="{{ l.url }}" aria-label="{{ l.texto }} en GitHub" title="{{ l.texto }} en GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>{% else %}<a href="{{ l.url }}"><span data-l="es">{{ l.texto }}</span><span data-l="en">{{ t_en }}</span></a>{% endif %}{% endfor %}</p>
   </div>
 </article>

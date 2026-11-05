@@ -12,16 +12,22 @@ layout: default
 
   <section class="hero" id="inicio">
     <div class="hero__texto">
-      <p class="kicker">Licenciado en Economía · PUCP · Lima, Perú</p>
-      <h1>Le pregunto cosas a los datos del Perú <em>hasta que confiesan.</em></h1>
-      <p class="hero__bio">
+      <p class="kicker"><span data-l="es">Licenciado en Economía · PUCP · Lima, Perú</span><span data-l="en">Economist · PUCP · Lima, Peru</span></p>
+      <h1 data-l="es">Le pregunto cosas a los datos del Perú <em>hasta que confiesan.</em></h1>
+      <h1 data-l="en">I ask Peru's data questions <em>until they confess.</em></h1>
+      <p class="hero__bio" data-l="es">
         Soy <strong>Luis Guevara Vega</strong>, licenciado en Economía por la PUCP y analista de monitoreo y gestión de datos en
         <a href="https://www.copeme.org.pe">COPEME</a>. Uso Python, R y Claude Code para medir lo que pasa en el Perú:
         pobreza, incendios, aprendizajes y empleo.
       </p>
+      <p class="hero__bio" data-l="en">
+        I'm <strong>Luis Guevara Vega</strong>, an economist from PUCP and a monitoring and data management analyst at
+        <a href="https://www.copeme.org.pe">COPEME</a>. I use Python, R and Claude Code to measure what happens in Peru:
+        poverty, wildfires, learning and jobs.
+      </p>
       <div class="hero__botones">
-        <a class="boton boton--rojo" href="#proyectos">Ver proyectos →</a>
-        <a class="boton" href="{{ base_path }}/files/cv-luis-guevara-vega.pdf">Descargar CV</a>
+        <a class="boton boton--rojo" href="#proyectos"><span data-l="es">Ver proyectos →</span><span data-l="en">See projects →</span></a>
+        <a class="boton" href="{{ base_path }}/files/cv-luis-guevara-vega.pdf"><span data-l="es">Descargar CV</span><span data-l="en">Download CV</span></a>
       </div>
       <ul class="hero__redes">
         <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
@@ -31,7 +37,7 @@ layout: default
     </div>
     <figure class="polaroid">
       <img src="{{ base_path }}/images/foto-perfil-cel.jpg" alt="Foto de Luis Guevara Vega" fetchpriority="high">
-      <figcaption>de los datos a las personas</figcaption>
+      <figcaption><span data-l="es">de los datos a las personas</span><span data-l="en">from data to people</span></figcaption>
     </figure>
   </section>
 
@@ -41,9 +47,9 @@ layout: default
       <ul class="cinta__grupo"{% if vuelta == 2 %} aria-hidden="true"{% endif %}>
         {% for c in site.data.cifras %}
         <li class="cinta__item">
-          <span>{{ c.etiqueta }}</span>
+          <span><span data-l="es">{{ c.etiqueta }}</span><span data-l="en">{{ c.etiqueta_en | default: c.etiqueta }}</span></span>
           <b>{{ c.valor }}</b>
-          <span class="{{ c.tono }}">{% if c.tono == "sube" %}▲{% else %}▼{% endif %} {{ c.nota }}</span>
+          <span class="{{ c.tono }}">{% if c.tono == "sube" %}▲{% else %}▼{% endif %} <span data-l="es">{{ c.nota }}</span><span data-l="en">{{ c.nota_en | default: c.nota }}</span></span>
         </li>
         {% endfor %}
       </ul>
@@ -52,20 +58,26 @@ layout: default
   </div>
 
   <section class="seccion caja ahora">
-    <p class="kicker">Ahora mismo</p>
+    <p class="kicker"><span data-l="es">Ahora mismo</span><span data-l="en">Right now</span></p>
     <ul class="ahora-lista">
-      <li><span class="emoji" aria-hidden="true">⚓</span><p>Lidero el monitoreo del nuevo proyecto de COPEME asociado al <b>puerto de Chancay</b>, con financiamiento de la cooperación alemana.</p></li>
-      <li><span class="emoji" aria-hidden="true">🤖</span><p>Estoy en la diplomatura de ciencia de datos de <b>QLab PUCP</b>, construyendo cosas con Claude Code.</p></li>
-      <li><span class="emoji" aria-hidden="true">🎓</span><p>Me acabo de incorporar al <b>Colegio de Economistas de Lima (<a href="https://lnkd.in/p/eRGwcDGe">CEL</a>)</b>.</p></li>
+      <li><span class="emoji" aria-hidden="true">⚓</span>
+        <p data-l="es">Lidero el monitoreo del nuevo proyecto de COPEME asociado al <b>puerto de Chancay</b>, con financiamiento de la cooperación alemana.</p>
+        <p data-l="en">I lead the monitoring of COPEME's new project linked to the <b>Port of Chancay</b>, funded by German development cooperation.</p></li>
+      <li><span class="emoji" aria-hidden="true">🤖</span>
+        <p data-l="es">Estoy en la diplomatura de ciencia de datos de <b>QLab PUCP</b>, construyendo cosas con Claude Code.</p>
+        <p data-l="en">I'm in the data science diploma at <b>QLab PUCP</b>, building things with Claude Code.</p></li>
+      <li><span class="emoji" aria-hidden="true">🎓</span>
+        <p data-l="es">Me acabo de incorporar al <b>Colegio de Economistas de Lima (<a href="https://lnkd.in/p/eRGwcDGe">CEL</a>)</b>.</p>
+        <p data-l="en">I just joined the <b>Lima Association of Economists (<a href="https://lnkd.in/p/eRGwcDGe">CEL</a>)</b>.</p></li>
     </ul>
   </section>
 
   <!-- ===================== PROYECTOS ===================== -->
   <section id="proyectos" class="seccion seccion--ancla">
     <header class="seccion__intro">
-      <p class="kicker">Portafolio · {{ proyectos.size }} proyectos</p>
-      <h2 class="seccion__titulo">Proyectos</h2>
-      <p class="ancho__bajada">Cada tarjeta tiene una pregunta, un resultado con número y los links al código. El mejor va primero.</p>
+      <p class="kicker"><span data-l="es">Portafolio · {{ proyectos.size }} proyectos</span><span data-l="en">Portfolio · {{ proyectos.size }} projects</span></p>
+      <h2 class="seccion__titulo"><span data-l="es">Proyectos</span><span data-l="en">Projects</span></h2>
+      <p class="ancho__bajada"><span data-l="es">Cada tarjeta tiene una pregunta, un resultado con número y los links al código. El mejor va primero.</span><span data-l="en">Each card has a question, a result with a number and links to the code. The best one comes first.</span></p>
     </header>
     <div class="tarjetas">
       {% for p in proyectos %}
@@ -77,34 +89,39 @@ layout: default
   <!-- ===================== VIDEOS ===================== -->
   <section id="videos" class="seccion seccion--ancla">
     <header class="seccion__intro">
-      <p class="kicker">{{ p_videos.kicker }}</p>
+      <p class="kicker"><span data-l="es">{{ p_videos.kicker }}</span><span data-l="en">{{ p_videos.kicker_en }}</span></p>
       <h2 class="seccion__titulo">Videos</h2>
-      <p class="ancho__bajada">{{ p_videos.bajada }}</p>
+      <p class="ancho__bajada"><span data-l="es">{{ p_videos.bajada }}</span><span data-l="en">{{ p_videos.bajada_en }}</span></p>
     </header>
-    {% capture sec %}{% include secciones/videos.md %}{% endcapture %}
-    <div class="ancho__contenido">{{ sec | markdownify }}</div>
+    {% capture es %}{% include secciones/videos.md %}{% endcapture %}{% capture en %}{% include secciones/videos.en.md %}{% endcapture %}
+    <div class="ancho__contenido" data-l="es">{{ es | markdownify }}</div>
+    <div class="ancho__contenido" data-l="en">{{ en | markdownify }}</div>
   </section>
 
   <!-- ===================== TESIS ===================== -->
   <section id="tesis" class="seccion seccion--ancla">
     <header class="seccion__intro">
-      <p class="kicker">{{ p_tesis.kicker }}</p>
-      <h2 class="seccion__titulo">Tesis</h2>
-      <p class="ancho__bajada"><strong class="seccion__subtitulo">{{ p_tesis.title }}</strong><br>{{ p_tesis.bajada }}</p>
+      <p class="kicker"><span data-l="es">{{ p_tesis.kicker }}</span><span data-l="en">{{ p_tesis.kicker_en }}</span></p>
+      <h2 class="seccion__titulo"><span data-l="es">Tesis</span><span data-l="en">Thesis</span></h2>
+      <p class="ancho__bajada" data-l="es"><strong class="seccion__subtitulo">{{ p_tesis.title }}</strong><br>{{ p_tesis.bajada }}</p>
+      <p class="ancho__bajada" data-l="en"><strong class="seccion__subtitulo">{{ p_tesis.title_en }}</strong><br>{{ p_tesis.bajada_en }}</p>
     </header>
-    {% capture sec %}{% include secciones/tesis.md %}{% endcapture %}
-    <div class="ancho__contenido">{{ sec | markdownify }}</div>
+    {% capture es %}{% include secciones/tesis.md %}{% endcapture %}{% capture en %}{% include secciones/tesis.en.md %}{% endcapture %}
+    <div class="ancho__contenido" data-l="es">{{ es | markdownify }}</div>
+    <div class="ancho__contenido" data-l="en">{{ en | markdownify }}</div>
   </section>
 
   <!-- ===================== CV ===================== -->
   <section id="cv" class="seccion seccion--ancla">
     <header class="seccion__intro">
-      <p class="kicker">{{ p_cv.kicker }}</p>
+      <p class="kicker"><span data-l="es">{{ p_cv.kicker }}</span><span data-l="en">{{ p_cv.kicker_en }}</span></p>
       <h2 class="seccion__titulo">CV</h2>
-      <p class="ancho__bajada">{{ p_cv.bajada }}</p>
+      <p class="ancho__bajada"><span data-l="es">{{ p_cv.bajada }}</span><span data-l="en">{{ p_cv.bajada_en }}</span></p>
     </header>
-    {% capture sec %}{% include secciones/cv.md %}{% endcapture %}
-    <div class="ancho__contenido">{{ sec | markdownify }}</div>
+    {% capture es %}{% include secciones/cv.md %}{% endcapture %}{% capture en %}{% include secciones/cv.en.md %}{% endcapture %}
+    <div class="ancho__contenido" data-l="es">{{ es | markdownify }}</div>
+    <div class="ancho__contenido" data-l="en">{{ en | markdownify }}</div>
+    {% include visor.html %}
   </section>
 
 </main>

@@ -6,9 +6,9 @@ layout: default
 
 <main id="contenido" class="ancho" role="main">
   <header class="ancho__cabeza">
-    {% if page.kicker %}<p class="kicker">{{ page.kicker }}</p>{% endif %}
-    <h1 class="ancho__titulo">{{ page.title }}</h1>
-    {% if page.bajada %}<p class="ancho__bajada">{{ page.bajada }}</p>{% endif %}
+    {% if page.kicker %}<p class="kicker"><span data-l="es">{{ page.kicker }}</span><span data-l="en">{{ page.kicker_en | default: page.kicker }}</span></p>{% endif %}
+    <h1 class="ancho__titulo"><span data-l="es">{{ page.title }}</span><span data-l="en">{{ page.title_en | default: page.title }}</span></h1>
+    {% if page.bajada %}<p class="ancho__bajada"><span data-l="es">{{ page.bajada }}</span><span data-l="en">{{ page.bajada_en | default: page.bajada }}</span></p>{% endif %}
   </header>
   <div class="ancho__contenido">
     {{ content }}

@@ -13,6 +13,27 @@ excerpt: "Skills de Claude Code que descargan, limpian, grafican y mapean la ENA
 enlaces:
   - {texto: "Código", url: "https://github.com/LuisGuevaraVega/skills_enaho"}
   - {texto: "Evaluación con y sin skills", url: "https://github.com/LuisGuevaraVega/skills_enaho/blob/main/evaluacion.md"}
+title_en: "Four skills that clean Peru's 2024 household survey"
+contexto_en: "Data Science with Python · QLab PUCP · October 2026"
+pregunta_en: "Can an agent clean Peru's ENAHO household survey and replicate the official poverty rate, the same way every time?"
+resultado_en: "monetary poverty, matching INEI, with the same 108,664 usual residents."
+cuerpo_en: |
+  Four Claude Code skills (download, clean, chart and map) that always work the same way. They chain on their own: if I ask for "a map of poverty by region" and the clean dataset is missing, Claude cleans it first, and if the raw data is missing, it downloads it from INEI first.
+
+  ## Validation against INEI
+
+  | Indicator | Obtained | INEI |
+  |---|---|---|
+  | Monetary poverty | 27.58 % | 27.6 % |
+  | Extreme poverty | 5.50 % | 5.5 % |
+  | Usual residents | 108,664 | 108,664 |
+  | Regions on the map | 25 | 25 |
+
+  ## What the data shows
+
+  - Poverty is 24.8 % in urban areas and 39.3 % in rural areas.
+  - The poorest regions are Cajamarca (45.0 %), Loreto (43.0 %) and Puno (39.9 %).
+  - The least poor are Ica (6.0 %), Moquegua (11.0 %) and Madre de Dios (11.1 %).
 ---
 
 Cuatro skills de Claude Code (descargar, limpiar, graficar y mapear) que trabajan siempre igual. Se encadenan solas: si pido «haz un mapa de la pobreza por departamento» y falta la base limpia, Claude primero la limpia, y si faltan los datos, primero los descarga del INEI.

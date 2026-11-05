@@ -1,0 +1,6 @@
+{% assign herramientas = "python:Python,r:R,stata:Stata,sql:SQL,power-bi:Power BI,looker-studio:Looker Studio,power-automate:Power Automate,claude-code:Claude Code,git:Git,github:GitHub" | split: "," %}
+<ul class="herramientas">
+  {% for h in herramientas %}{% assign par = h | split: ":" %}
+  <li><img src="{{ site.baseurl }}/images/logos/{{ par[0] }}.svg" alt="" width="30" height="30" loading="lazy"><span>{{ par[1] }}</span></li>
+  {% endfor %}
+</ul>

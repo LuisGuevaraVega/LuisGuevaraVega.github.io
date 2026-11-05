@@ -26,7 +26,7 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.title %}<h1 class="page__title" itemprop="headline"><span data-l="es">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</span><span data-l="en">{{ page.title_en | default: page.title | markdownify | remove: "<p>" | remove: "</p>" }}</span></h1>{% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
@@ -48,14 +48,21 @@ layout: default
         {% if page.collection == 'portfolio' %}
           <div class="ficha">
             <p class="tarjeta__etiquetas">{% for e in page.etiquetas %}<span class="chip">{{ e }}</span>{% endfor %}</p>
-            <p><b>Pregunta:</b> {{ page.pregunta }}</p>
-            <p><span class="cifra">{{ page.cifra }}</span> {{ page.resultado }}</p>
-            <p class="tarjeta__contexto">{{ page.contexto }}</p>
-            <div class="enlaces">{% for l in page.enlaces %}{% if l.url contains "github.com" and l.texto contains "Código" %}<a class="enlace-github" href="{{ l.url }}" aria-label="{{ l.texto }} en GitHub" title="{{ l.texto }} en GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>{% else %}<a href="{{ l.url }}">{{ l.texto }}</a>{% endif %}{% endfor %}</div>
+            <p data-l="es"><b>Pregunta:</b> {{ page.pregunta }}</p>
+            <p data-l="en"><b>Question:</b> {{ page.pregunta_en | default: page.pregunta }}</p>
+            <p data-l="es"><span class="cifra">{{ page.cifra }}</span> {{ page.resultado }}</p>
+            <p data-l="en"><span class="cifra">{{ page.cifra_en | default: page.cifra }}</span> {{ page.resultado_en | default: page.resultado }}</p>
+            <p class="tarjeta__contexto"><span data-l="es">{{ page.contexto }}</span><span data-l="en">{{ page.contexto_en | default: page.contexto }}</span></p>
+            <div class="enlaces">{% for l in page.enlaces %}{% assign t_en = site.data.i18n.enlaces[l.texto] | default: l.texto %}{% if l.url contains "github.com" and l.texto contains "Código" %}<a class="enlace-github" href="{{ l.url }}" aria-label="{{ l.texto }} en GitHub" title="{{ l.texto }} en GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>{% else %}<a href="{{ l.url }}"><span data-l="es">{{ l.texto }}</span><span data-l="en">{{ t_en }}</span></a>{% endif %}{% endfor %}</div>
           </div>
           <p><img src="{{ base_path }}{{ page.imagen }}" alt="{{ page.imagen_alt }}"></p>
         {% endif %}
-        {{ content }}
+        {% if page.cuerpo_en %}
+          <div data-l="es">{{ content }}</div>
+          <div data-l="en">{{ page.cuerpo_en | markdownify }}</div>
+        {% else %}
+          {{ content }}
+        {% endif %}
 
         {% include /components/citations.html
             citation=page.citation
