@@ -1,0 +1,16 @@
+---
+layout: ancho
+title: "Proyectos"
+permalink: /proyectos/
+kicker: "Portafolio · 9 proyectos"
+bajada: "Cada tarjeta tiene una pregunta, un resultado con número y los links al código. El mejor va primero."
+redirect_from:
+  - /portfolio/
+---
+
+{% assign proyectos = site.portfolio | sort: "orden" %}
+<div class="tarjetas">
+  {% for p in proyectos %}
+    {% include tarjeta.html proyecto=p %}
+  {% endfor %}
+</div>

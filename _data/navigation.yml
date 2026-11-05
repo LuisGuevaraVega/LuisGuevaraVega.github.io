@@ -1,0 +1,13 @@
+# Orden de los enlaces del menú superior.
+main:
+  - title: "Proyectos"
+    url: /proyectos/
+
+  - title: "Videos"
+    url: /videos/
+
+  - title: "Tesis"
+    url: /tesis/
+
+  - title: "CV"
+    url: /cv/

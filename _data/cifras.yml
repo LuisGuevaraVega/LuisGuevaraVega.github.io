@@ -1,0 +1,11 @@
+# Cifras de la cinta de la portada. Cada una sale de un proyecto del portafolio.
+- {etiqueta: "POBREZA 2024", valor: "27.6 %", nota: "= INEI", tono: sube}
+- {etiqueta: "SERIES BCRP", valor: "17,167", nota: "al alcance de Claude", tono: sube}
+- {etiqueta: "CLAUDE + MCP", valor: "12/12", nota: "cifras correctas", tono: sube}
+- {etiqueta: "RÍO TAMBO", valor: "2,695 ha", nota: "quemadas", tono: baja}
+- {etiqueta: "EDIFICACIONES", valor: "648", nota: "a ≤ 1 km del fuego", tono: baja}
+- {etiqueta: "MATEMÁTICA 4.º PRIM.", valor: "−10.7 pp", nota: "2019 → 2022", tono: baja}
+- {etiqueta: "CLASIFICADOR", valor: "F1 0.913", nota: "titulares", tono: sube}
+- {etiqueta: "OCR", valor: "CER 0.091", nota: "documentos", tono: sube}
+- {etiqueta: "NINIS 2025", valor: "17.8 %", nota: "de jóvenes", tono: baja}
+- {etiqueta: "TESIS", valor: "−16.6 pp", nota: "empleo no profesional", tono: sube}

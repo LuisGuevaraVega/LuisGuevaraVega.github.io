@@ -1,0 +1,15 @@
+{% include base_path %}
+{% assign p = include.proyecto %}
+<article class="tarjeta">
+  <a class="tarjeta__imagen" href="{{ base_path }}{{ p.url }}" tabindex="-1" aria-hidden="true">
+    <img src="{{ base_path }}{{ p.imagen }}" alt="" loading="lazy">
+  </a>
+  <div class="tarjeta__cuerpo">
+    <p class="tarjeta__etiquetas">{% for e in p.etiquetas %}<span class="chip">{{ e }}</span>{% endfor %}</p>
+    <h3><a href="{{ base_path }}{{ p.url }}">{{ p.title }}</a></h3>
+    <p class="tarjeta__pregunta"><b>Pregunta:</b> {{ p.pregunta }}</p>
+    <p class="tarjeta__resultado"><span class="cifra">{{ p.cifra }}</span> {{ p.resultado }}</p>
+    <p class="tarjeta__contexto">{{ p.contexto }}</p>
+    <p class="tarjeta__enlaces">{% for l in p.enlaces %}<a href="{{ l.url }}">{{ l.texto }}</a>{% endfor %}</p>
+  </div>
+</article>
