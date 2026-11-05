@@ -11,3 +11,6 @@ main:
 
   - title: "CV"
     url: /cv/
+
+  - title: "Contacto"
+    url: "mailto:del@copeme.org.pe"
