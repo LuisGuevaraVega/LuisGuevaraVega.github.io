@@ -571,3 +571,42 @@ img, video, iframe { max-width: 100%; }
   color: var(--tinta);
   overflow-wrap: anywhere;
 }
+
+/* ---------- Cinta de cifras con más aire ---------- */
+.cinta {
+  background: #1c1a15;           /* siempre oscura, también en modo oscuro */
+  color: #fbf6ea;
+}
+html[data-theme="dark"] .cinta { background: #0b0a07; border-color: #3a362b; }
+.cinta__pista { animation-duration: 80s; }
+.cinta__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: baseline;
+  column-gap: 0.55em;
+  row-gap: 0.2rem;
+  padding: 1rem 2.6rem;
+  border-right: 0;
+}
+.cinta__item > span:first-child {
+  grid-column: 1 / -1;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: #b8b09c;
+}
+.cinta__item b { font-size: 1.4rem; line-height: 1.1; color: #ffe15a; }
+.cinta__item > span:last-child { font-size: 0.8rem; }
+.cinta__item::after {
+  content: "✦";
+  position: absolute;
+  right: -0.45em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff5a6b;
+  font-size: 0.85rem;
+}
+@media (max-width: 520px) {
+  .cinta__item { padding: 0.85rem 1.8rem; }
+  .cinta__item b { font-size: 1.2rem; }
+}
