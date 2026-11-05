@@ -886,3 +886,26 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
 
 /* Volver a la presentación = volver al tope exacto de la página */
 #inicio { scroll-margin-top: 100vh; }
+
+/* ---------- Modo oscuro: los colores del tema usan la paleta propia (sin el gris #474747 del tema) ---------- */
+html[data-theme="dark"] {
+  --global-bg-color: var(--papel);
+  --global-footer-bg-color: var(--papel-2);
+  --global-dark-border-color: #3a362b;
+  --global-text-color: var(--tinta);
+  --global-text-color-light: var(--tinta-2);
+  --global-link-color: var(--rojo);
+  --global-link-color-hover: var(--rojo-oscuro);
+  --global-link-color-visited: var(--rojo);
+  --global-masthead-link-color: var(--tinta);
+  --global-masthead-link-color-hover: var(--rojo);
+  --global-thead-color: var(--papel-2);
+  --global-code-background-color: var(--papel-2);
+  --global-code-text-color: var(--tinta);
+}
+/* Botones del menú sin recuadro de fondo, en ambos modos */
+#site-nav .visible-links > li,
+#site-nav .visible-links > li > a,
+#site-nav > button { background: transparent !important; }
+html[data-theme="dark"] .masthead { background: var(--papel); border-bottom-color: #3a362b; }
+html[data-theme="dark"] .greedy-nav .visible-links li:first-child { border-right-color: #3a362b; }
