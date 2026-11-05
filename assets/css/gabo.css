@@ -868,3 +868,18 @@ html[data-lang="en"] [data-l="es"] { display: none !important; }
 @media (prefers-reduced-motion: reduce) {
   .certs li, .certs li:hover { transition: none; transform: none; }
 }
+
+/* ---------- Bloque LGV + nombre: vuelve a la presentación; LGV se pone amarillo al pasar el cursor ---------- */
+.greedy-nav .visible-links li:first-child a::before {
+  transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+.greedy-nav .visible-links li:first-child a:hover::before,
+.greedy-nav .visible-links li:first-child a:focus-visible::before {
+  background: var(--resaltador) !important;
+  color: #1c1a15 !important;
+  transform: rotate(-6deg) scale(1.08) !important;
+}
+.greedy-nav .visible-links li:first-child a:hover { color: var(--tinta); }
+@media (prefers-reduced-motion: reduce) {
+  .greedy-nav .visible-links li:first-child a:hover::before { transform: none !important; }
+}
