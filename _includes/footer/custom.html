@@ -11,7 +11,7 @@
     html.setAttribute('data-lang', l);
     html.setAttribute('lang', l);
     try { localStorage.setItem('idioma', l); } catch (e) {}
-    window.dispatchEvent(new Event('resize'));   // el menú vuelve a medir sus botones
+    window.dispatchEvent(new Event('resize'));   /* el menú vuelve a medir sus botones */
   }
   var b = document.querySelector('#lang-toggle a');
   if (!b) return;
