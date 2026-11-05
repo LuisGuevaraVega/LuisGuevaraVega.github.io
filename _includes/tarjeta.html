@@ -10,6 +10,6 @@
     <p class="tarjeta__pregunta"><b>Pregunta:</b> {{ p.pregunta }}</p>
     <p class="tarjeta__resultado"><span class="cifra">{{ p.cifra }}</span> {{ p.resultado }}</p>
     <p class="tarjeta__contexto">{{ p.contexto }}</p>
-    <p class="tarjeta__enlaces">{% for l in p.enlaces %}<a href="{{ l.url }}">{{ l.texto }}</a>{% endfor %}</p>
+    <p class="tarjeta__enlaces">{% for l in p.enlaces %}{% if l.url contains "github.com" and l.texto contains "Código" %}<a class="enlace-github" href="{{ l.url }}" aria-label="{{ l.texto }} en GitHub" title="{{ l.texto }} en GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>{% else %}<a href="{{ l.url }}">{{ l.texto }}</a>{% endif %}{% endfor %}</p>
   </div>
 </article>

@@ -671,3 +671,29 @@ html[data-theme="dark"] .cinta { background: #0b0a07; border-color: #3a362b; }
 }
 .visor__cuerpo { padding: 0.8rem; }
 .visor__cuerpo img { display: block; width: 100%; height: auto; border-radius: 6px; }
+
+/* ---------- Ícono de GitHub en lugar de «Código» ---------- */
+.tarjeta__enlaces a.enlace-github, .enlaces a.enlace-github {
+  display: inline-grid; place-items: center;
+  width: 2.1em; height: 2.1em; padding: 0;
+  font-size: 1rem; border-radius: 50%;
+}
+.enlace-github i { font-size: 1.15rem; }
+
+/* Chip del año en certificaciones: ancho justo */
+.certs .chip { align-self: flex-start; }
+
+/* Cuadrito rojo con la «L» junto al nombre (el tema le borraba el contenido) */
+.greedy-nav .visible-links li:first-child a::before {
+  content: "L" !important;
+  position: static;
+  display: inline-grid; place-items: center;
+  width: 1.5em; height: 1.5em;
+  margin-right: 0.45em;
+  border-radius: 0.35em;
+  background: var(--rojo);
+  color: #fff;
+  font-family: Georgia, serif; font-weight: 700; line-height: 1;
+  vertical-align: middle;
+  transform: none !important;
+}
